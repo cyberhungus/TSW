@@ -4,14 +4,16 @@ import java.util.Scanner;
 public class main {
     static bankautomat bA =new bankautomat();
 
+
+
+
+
     public static void main(String[] args) {
-        while(true){
-            try {
-                int a= System.console().reader().read();
-                System.out.print(a);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        System.out.println(bA.inputString("e1234b500bg"));
+
+
+        /*while(true){
+
             Scanner in = new Scanner(System.in);
 
             String s = in.nextLine();
@@ -25,7 +27,8 @@ public class main {
                 System.out.println("error");
             }
 
-       }
+
+       }*/
 
     }
 }

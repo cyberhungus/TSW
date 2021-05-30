@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-25T16:00:51" hostname="DESKTOP-2I74A4K" time="0.068">
+  <properties/>
+  <testcase name="wrongPinTimesTwo()" classname="tests" time="0.068"/>
+  <system-out><![CDATA[state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+temp=1235
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1233
+temp=1233
+found 4 
+you are a criminal sir!
+
+1
+12
+123
+1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -2,6 +2,7 @@ public class bankautomat {
     private String storage = "";
     private String secretPin = "1234";
     private int dailyMaximum = 1000;
+    //todo dailymaximum entfernen
     private int state = 0;
     private int numCOunt = 0;
     private int tryCount = 0;
@@ -16,7 +17,7 @@ public class bankautomat {
 
         storage += c;
         analyseChar(c);
-        checkStringForNumbers(state);
+        //checkStringForNumbers(state);
         print(storage);
 
 
@@ -28,7 +29,7 @@ public class bankautomat {
 
     private void checkStringForNumbers(int state) {
         String temp = "";
-        temp = storage.substring(storage.length() - 4, storage.length());
+        temp = storage.substring(storage.length() - 5, storage.length()-1);
         System.out.println("temp="+temp);
         switch (state) {
             case 1:
@@ -46,11 +47,20 @@ public class bankautomat {
         }
     }
 
+    public int inputString(String a){
+        String[] parsed = a.split("");
+        for (String s:parsed){
+            this.run(s.charAt(0));
+        }
+        return this.state;
+    }
+
     private void confirmPin(String temp) {
         if (temp.equals(secretPin)) {
             state = 2;
             print("Pin entry successful, pls enter amount ");
             print(state + "");
+            tryCount = 0;
         } else {
             state = 1;
             tryCount++;
@@ -59,26 +69,39 @@ public class bankautomat {
                 print("wrong pin, pls try again");
             } else if (tryCount == 2) {
                 print("you are a criminal sir!");
-                state = 0;
+                //state = 0;
             }
-
+            else if (tryCount==3){
+                print("i am calling the police!");
+                state = 0;
+                tryCount = 0;
+            }
         }
-
     }
 
 
     private void analyseChar(char c) {
         switch (c) {
             case 'e':
-                state = 1;
-                print("state is now 1. ready for code");
-
+                if(state==0) {
+                    state = 1;
+                    print("state is now 1. ready for code");
+                }
+                else {
+                    print("you already have a card inserted");
+                }
                 break;
             case 'f':
-                state = 0;
-                print("invalid card inserted");
-                //ungültige Ec Karte
-
+                if (state==0) {
+                    state = 0;
+                    print("invalid card inserted");
+                    storage = "";
+                    //ungültige Ec Karte
+                }
+                else{
+                    print("There is already a card in the slot");
+                    storage = "";
+                }
                 break;
             case 'g':
                 //geldentnahmne
@@ -99,7 +122,12 @@ public class bankautomat {
 
             case 'b':
                 //bestätigung
-                confirmEntry();
+                if (state==1){
+                    checkStringForNumbers(state);
+                    storage="";
+                }
+                else if(state==2){
+                confirmEntry();}
 
                 break;
             case 'k':
@@ -148,8 +176,15 @@ public class bankautomat {
         }
 
 
+
     }
 
+    public int getState() {
+        return state;
+    }
+
+
+    //todo was passiert wenn wir k eingeben
     private void confirmEntry(
     ) {
         if (state == 2) {
@@ -166,12 +201,14 @@ public class bankautomat {
             } else {
                 state = 3;
                 try {
-                    temp = storage.substring(storage.length() - 3, storage.length() - 1);
+                    temp = storage.substring(0, storage.length() - 1);
                 } catch (StringIndexOutOfBoundsException e) {
                     print("tried to remove letter from zero-length string");
                 }
 
-                print("Take these " + temp + "monies, have a nice day.");
+                print("Take these " + temp + " monies, have a nice day.");
+                print(state+"");
+                //todo abziehen des
             }
         }
     }
