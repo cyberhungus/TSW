@@ -1,10 +1,9 @@
-import java.util.Locale;
+import org.junit.jupiter.api.function.Executable;
 
 public class bankautomat {
     private String storage = "";
     private String secretPin = "1234";
     private int dailyMaximum = 5000;
-    //todo dailymaximum entfernen
     private int state = 0;
     private int numCOunt = 0;
     private int tryCount = 0;
@@ -33,13 +32,14 @@ public class bankautomat {
     private void checkStringForNumbers(int state) {
         String temp = "";
         if (storage.length() >6){
-
         }
-        temp = storage.substring(storage.length() - 5, storage.length()-1);
+        try {
+            temp = storage.substring(storage.length() - 5, storage.length()-1);
+        } catch (StringIndexOutOfBoundsException e){print("ERRROR: illegal iput, pin too short");}
+
 
         System.out.println("temp="+temp);
-        switch (state) {
-            case 1:
+        if (state == 1) {
                 //was wenn der user einen vierstelligen betrag abheben will
                 if (temp.matches("\\d{4}")) {
                     print("found 4 ");
@@ -50,16 +50,14 @@ public class bankautomat {
                         print("tried to remove letter from zero-length string");
                     }
                 }
-                break;
         }
     }
 
-    public int inputString(String a){
+    public inputString(String a){
         String[] parsed = a.split("");
         for (String s:parsed){
             this.run(s.charAt(0));
         }
-        return this.state;
     }
 
     private void confirmPin(String temp) {
@@ -147,40 +145,6 @@ public class bankautomat {
                 }
 
                 break;
-            case '0':
-
-                break;
-            case '1':
-
-                break;
-            case '2':
-
-                break;
-            case '3':
-
-                break;
-            case '4':
-
-                break;
-            case '5':
-
-                break;
-            case '6':
-
-                break;
-            case '7':
-
-                break;
-            case '8':
-
-                break;
-            case '9':
-
-                break;
-
-
-            default:
-
 
         }
 
@@ -192,8 +156,6 @@ public class bankautomat {
         return state;
     }
 
-
-    //todo was passiert wenn wir k eingeben
     private void confirmEntry(
     ) {
         if (state == 2) {
@@ -203,8 +165,7 @@ public class bankautomat {
             } catch (StringIndexOutOfBoundsException e) {
                 print("tried to remove letter from zero-length string");
             }
-            if (Integer.parseInt(temp) > dailyMaximum) {
-                //state = 0;
+            if (temp.length() !=0 &&Integer.parseInt(temp) > dailyMaximum) {
                 print("you dont have that much money, get a job! ");
                 print(state + "");
             } else {
@@ -217,7 +178,7 @@ public class bankautomat {
 
                 print("Take these " + temp + " monies, have a nice day.");
                 print(state+"");
-                //todo abziehen des
+
             }
         }
     }

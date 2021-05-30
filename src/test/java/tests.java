@@ -61,7 +61,7 @@ public class tests {
     public void longPin(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("e1235k445678b");
-        Assertions.assertEquals(2, bankautomat.getState());
+        Assertions.assertEquals(1, bankautomat.getState());
     }
     @Test
     public void strangePin(){
@@ -96,12 +96,6 @@ public class tests {
         Assertions.assertEquals(0, bankautomat.getState());
     }
     @Test
-    void strangePin3(){
-        bankautomat bankautomat = new bankautomat();
-        bankautomat.inputString("eabcdb");
-        Assertions.assertEquals(1, bankautomat.getState());
-    }
-    @Test
     void toomanycards(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
@@ -126,6 +120,37 @@ public class tests {
         bankautomat.inputString("e1234b2000kk50kk10bg");
         Assertions.assertEquals(0, bankautomat.getState());
     }
+    @Test
+    void exceptions(){
+        bankautomat bankautomat = new bankautomat();
+        Assertions.assertDoesNotThrow( () -> bankautomat.inputString("e12b"));
+    }
+    @Test
+    void exceptionsStatus2(){
+        bankautomat bankautomat = new bankautomat();
+
+        Assertions.assertDoesNotThrow( () -> bankautomat.inputString("e1234bb"));
+    }
+    @Test
+    void testCancle() {
+        bankautomat bankautomat = new bankautomat();
+        bankautomat.inputString("ea");
+        Assertions.assertEquals(0, bankautomat.getState());
+    }
+
+    @Test
+    void testCancel2(){
+        bankautomat bankautomat = new bankautomat();
+        bankautomat.inputString("e1234ba");
+        Assertions.assertEquals(0, bankautomat.getState());
+    }
+
+    @Test
+    void testCancle3(){
+        bankautomat bankautomat = new bankautomat();
+            bankautomat.inputString("ea");
+            Assertions.assertEquals(0, bankautomat.getState());
+        }
 
 
     //TODO Äquivalenzklassen

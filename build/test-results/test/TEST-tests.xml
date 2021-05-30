@@ -1,105 +1,681 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-05-30T13:53:40" hostname="WUFFEL-PC" time="0.034">
+<testsuite name="tests" tests="23" skipped="0" failures="0" errors="0" timestamp="2021-05-30T14:25:24" hostname="WUFFEL-PC" time="0.127">
   <properties/>
-  <testcase name="multibleCorrections()" classname="tests" time="0.034">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
-	at tests.multibleCorrections(tests.java:127)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</failure>
-  </testcase>
+  <testcase name="amountkorrekt()" classname="tests" time="0.05"/>
+  <testcase name="exceptionsStatus2()" classname="tests" time="0.004"/>
+  <testcase name="correctPintoolong()" classname="tests" time="0.002"/>
+  <testcase name="rightPin()" classname="tests" time="0.001"/>
+  <testcase name="exceptions()" classname="tests" time="0.002"/>
+  <testcase name="toomanycardspluspin()" classname="tests" time="0.011"/>
+  <testcase name="testCheckerWrongCard()" classname="tests" time="0.001"/>
+  <testcase name="strangeString2()" classname="tests" time="0.003"/>
+  <testcase name="strangePin()" classname="tests" time="0.001"/>
+  <testcase name="toomanycards()" classname="tests" time="0.009"/>
+  <testcase name="testCancel2()" classname="tests" time="0.001"/>
+  <testcase name="testCancle3()" classname="tests" time="0.001"/>
+  <testcase name="longPin()" classname="tests" time="0.002"/>
+  <testcase name="toomanyparkcardspluspin()" classname="tests" time="0.007"/>
+  <testcase name="correctPin()" classname="tests" time="0.002"/>
+  <testcase name="testCancle()" classname="tests" time="0.0"/>
+  <testcase name="wrongPinTimesOne()" classname="tests" time="0.001"/>
+  <testcase name="wrongPinTimesTwo()" classname="tests" time="0.002"/>
+  <testcase name="dailyLimit()" classname="tests" time="0.001"/>
+  <testcase name="multibleCorrections()" classname="tests" time="0.002"/>
+  <testcase name="testCheckerSuccessfulRun()" classname="tests" time="0.001"/>
+  <testcase name="testCheckerWrongCardThenRightCard()" classname="tests" time="0.002"/>
+  <testcase name="strangeString()" classname="tests" time="0.001"/>
   <system-out><![CDATA[state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+2
+20
+200
+2000
+20000
+200000
+2000000
+20000000
+DEBUG: Korrektur 2000000
+2000000
+DEBUG: Korrektur 200000
+200000
+DEBUG: Korrektur 20000
+20000
+DEBUG: Korrektur 2000
+2000
+DEBUG: Korrektur 200
+200
+DEBUG: Korrektur 20
+20
+DEBUG: Korrektur 2
+2
+DEBUG: Korrektur 
+
+5
+50
+Take these 50 monies, have a nice day.
+3
+50b
+you received your money, state is now idle 
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+Take these  monies, have a nice day.
+3
+b
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+state is now 1. ready for code
+e
+e1
+e12
+ERRROR: illegal iput, pin too short
+temp=
+
+state is now 1. ready for code
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+invalid card inserted
+
+1
+12
+123
+1234
+1234b
+1234b5
+1234b50
+1234b500
+1234b500b
+1234b500bg
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+e12346
+e123468
+e1234684
+e12346843
+e123468435
+e1234684352
+e12346843528
+e123468435285
+e1234684352856
+e12346843528561
+e123468435285612
+e1234684352856123
+e12346843528561234
+temp=1234
+found 4 
+wrong pin, pls try again
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+e12344
+e123441
+e1234412
+e12344123
+e123441234
+temp=1234
+found 4 
+wrong pin, pls try again
+
+state is now 1. ready for code
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+
+state is now 1. ready for code
+e
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+e12344
+e123445
+e1234456
+e12344567
+e123445678
+temp=5678
+found 4 
+wrong pin, pls try again
+
+state is now 1. ready for code
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+you already have a card inserted
+e
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+There is already a card in the slot
+
+1
+12
+123
+1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+state is now 1. ready for code
+e
+e1
+e12
+e125
+DEBUG: Korrektur e12
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+state is now 1. ready for code
+e
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+temp=1235
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+temp=1235
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1233
+temp=1233
+found 4 
+you are a criminal sir!
+
+1
+12
+123
+1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+2
+20
+200
+2000
+20000
+200000
+2000000
+20000000
+you dont have that much money, get a job! 
+2
+20000000b
+20000000bg
+state is now 1. ready for code
 e
 e1
 e12
@@ -130,6 +706,69 @@ Take these 2010 monies, have a nice day.
 3
 2010b
 you received your money, state is now idle 
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+5
+50
+500
+Take these 500 monies, have a nice day.
+3
+500b
+you received your money, state is now idle 
+
+invalid card inserted
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
+
+5
+50
+500
+Take these 500 monies, have a nice day.
+3
+500b
+you received your money, state is now idle 
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+found 4 
+Pin entry successful, pls enter amount 
+2
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
