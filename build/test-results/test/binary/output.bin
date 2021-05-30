@@ -3,28 +3,31 @@
 e1
 e12
 e123
-e1235
-temp=1235
-
-found 4 
-wrong pin, pls try again
-
-1
-12
-123
-1233
-temp=1233
-
-found 4 
-you are a criminal sir!
-
-1
-12
-123
-1234
+e1234
 temp=1234
 
 found 4 
 )Pin entry successful, pls enter amount 
 2
+
+2
+20
+200
+2000
+DEBUG: Korrektur 200
+200
+DEBUG: Korrektur 20
+20
+205
+2050
+DEBUG: Korrektur 205
+205
+DEBUG: Korrektur 20
+20
+201
+2010
+*Take these 2010 monies, have a nice day.
+3
+2010b
+-you received your money, state is now idle 
 

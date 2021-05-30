@@ -9,10 +9,10 @@ public class main {
 
 
     public static void main(String[] args) {
-        System.out.println(bA.inputString("e1234b500bg"));
+        //System.out.println(bA.inputString("e1234b500bg"));
 
 
-        /*while(true){
+        while(true){
 
             Scanner in = new Scanner(System.in);
 
@@ -28,7 +28,7 @@ public class main {
             }
 
 
-       }*/
+       }
 
     }
 }

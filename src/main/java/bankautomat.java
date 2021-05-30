@@ -1,7 +1,9 @@
+import java.util.Locale;
+
 public class bankautomat {
     private String storage = "";
     private String secretPin = "1234";
-    private int dailyMaximum = 1000;
+    private int dailyMaximum = 5000;
     //todo dailymaximum entfernen
     private int state = 0;
     private int numCOunt = 0;
@@ -16,6 +18,7 @@ public class bankautomat {
     public void run(char c) {
 
         storage += c;
+        storage = storage.toLowerCase();
         analyseChar(c);
         //checkStringForNumbers(state);
         print(storage);
@@ -29,7 +32,11 @@ public class bankautomat {
 
     private void checkStringForNumbers(int state) {
         String temp = "";
+        if (storage.length() >6){
+
+        }
         temp = storage.substring(storage.length() - 5, storage.length()-1);
+
         System.out.println("temp="+temp);
         switch (state) {
             case 1:
@@ -56,7 +63,7 @@ public class bankautomat {
     }
 
     private void confirmPin(String temp) {
-        if (temp.equals(secretPin)) {
+        if (temp.equals(secretPin) && storage.length() <= 6) {
             state = 2;
             print("Pin entry successful, pls enter amount ");
             print(state + "");
@@ -89,6 +96,7 @@ public class bankautomat {
                 }
                 else {
                     print("you already have a card inserted");
+                    storage = storage.substring(0,storage.length()-1);
                 }
                 break;
             case 'f':
@@ -132,7 +140,8 @@ public class bankautomat {
                 break;
             case 'k':
                 try {
-                    storage = storage.substring(0, storage.length() - 1);
+                    storage = storage.substring(0, storage.length() - 2);
+                    System.out.println("DEBUG: Korrektur " +storage);
                 } catch (StringIndexOutOfBoundsException e) {
                     print("tried to remove letter from zero-length string");
                 }
@@ -190,12 +199,12 @@ public class bankautomat {
         if (state == 2) {
             String temp = "";
             try {
-                temp = storage.substring(storage.length() - 3, storage.length() - 1);
+                temp = storage.substring(0, storage.length()-1);
             } catch (StringIndexOutOfBoundsException e) {
                 print("tried to remove letter from zero-length string");
             }
             if (Integer.parseInt(temp) > dailyMaximum) {
-                state = 0;
+                //state = 0;
                 print("you dont have that much money, get a job! ");
                 print(state + "");
             } else {
