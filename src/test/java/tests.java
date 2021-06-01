@@ -6,65 +6,65 @@ import org.junit.jupiter.api.Test;
 
 public class tests {
     @Test
-    public void testCheckerSuccessfulRun(){
+     void testCheckerSuccessfulRun(){
         bankautomat bA =new bankautomat();
         bA.inputString("e1234b500bg");
 
         Assertions.assertEquals(0,bA.getState());
     }
     @Test
-    public void testCheckerWrongCard(){
+    void testCheckerWrongCard(){
         bankautomat bA =new bankautomat();
         bA.inputString("f1234b500bg");
 
         Assertions.assertEquals(0,bA.getState());
     }
     @Test
-    public void testCheckerWrongCardThenRightCard(){
+    void testCheckerWrongCardThenRightCard(){
         bankautomat bA =new bankautomat();
         bA.inputString("fe1234b500bg");
 
         Assertions.assertEquals(0,bA.getState());
     }
     @Test
-    public void wrongPinTimesOne(){
+     void wrongPinTimesOne(){
         bankautomat bA =new bankautomat();
         bA.inputString("e1235b1234b");
         Assertions.assertEquals(2,bA.getState());
     }
     @Test
-    public void wrongPinTimesTwo(){
+     void wrongPinTimesTwo(){
         bankautomat bA =new bankautomat();
         bA.inputString("e1235b1233b1234b");
         Assertions.assertEquals(2,bA.getState());
     }
     @Test
-    public void rightPin(){
+     void rightPin(){
         bankautomat bA = new bankautomat();
         bA.inputString("e1234");
         Assertions.assertEquals(1, bA.getState());
     }
 
     @Test
-    public void correctPin(){
+     void correctPin(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("e125k34b");
         Assertions.assertEquals(2, bankautomat.getState());
     }
     @Test
-    public void correctPintoolong(){
+     void correctPintoolong(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("e1235k4b");
         Assertions.assertEquals(2, bankautomat.getState());
     }
     @Test
-    public void longPin(){
+     void longPin(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("e1235k445678b");
         Assertions.assertEquals(1, bankautomat.getState());
     }
     @Test
-    public void strangePin(){
+    void strangePin(){
         bankautomat bankautomat = new bankautomat();
         bankautomat.inputString("e1235k441234b");
         Assertions.assertEquals(1, bankautomat.getState());
@@ -153,6 +153,6 @@ public class tests {
         }
 
 
-    //TODO Äquivalenzklassen
+
 
 }

@@ -5,7 +5,6 @@ public class bankautomat {
     private String secretPin = "1234";
     private int dailyMaximum = 5000;
     private int state = 0;
-    private int numCOunt = 0;
     private int tryCount = 0;
     //0 idle- 1 waiting for pin - 2 waiting for amount  3-cash out
 
@@ -44,7 +43,6 @@ public class bankautomat {
                 if (temp.matches("\\d{4}")) {
                     print("found 4 ");
                     try {
-                        //temp = storage.substring(storage.length() - 4, storage.length() - 1);
                         confirmPin(temp);
                     } catch (StringIndexOutOfBoundsException e) {
                         print("tried to remove letter from zero-length string");
@@ -53,7 +51,7 @@ public class bankautomat {
         }
     }
 
-    public inputString(String a){
+    public void inputString(String a){
         String[] parsed = a.split("");
         for (String s:parsed){
             this.run(s.charAt(0));
@@ -145,6 +143,7 @@ public class bankautomat {
                 }
 
                 break;
+            default:{}
 
         }
 
