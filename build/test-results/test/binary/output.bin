@@ -485,6 +485,491 @@ found 4
 
  state is now 1. ready for code
 e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+5
+50
+500
+)Take these 500 monies, have a nice day.
+3
+500b
+-you received your money, state is now idle 
+
+invalid card inserted
+
+1
+12
+123
+1234
+1234b
+1234b5
+	1234b50
+
+1234b500
+1234b500b
+1234b500bg
+invalid card inserted
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+5
+50
+500
+)Take these 500 monies, have a nice day.
+3
+500b
+-you received your money, state is now idle 
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+temp=1235
+
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+temp=1235
+
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1233
+temp=1233
+
+found 4 
+you are a criminal sir!
+
+1
+12
+123
+1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1233
+temp=1233
+
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1233
+temp=1233
+
+found 4 
+you are a criminal sir!
+
+1
+12
+123
+1233
+temp=1233
+
+found 4 
+i am calling the police!
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+ state is now 1. ready for code
+e
+e1
+e12
+e125
+DEBUG: Korrektur e12
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+e12344
+	e123445
+
+e1234456
+e12344567
+e123445678
+temp=5678
+
+found 4 
+wrong pin, pls try again
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1235
+DEBUG: Korrektur e123
+e123
+e1234
+e12344
+	e123441
+
+e1234412
+e12344123
+e123441234
+temp=1234
+
+found 4 
+wrong pin, pls try again
+
+ state is now 1. ready for code
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+ state is now 1. ready for code
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+ state is now 1. ready for code
+e
 "you already have a card inserted
 e
 "you already have a card inserted
@@ -595,15 +1080,316 @@ found 4
 )Pin entry successful, pls enter amount 
 2
 
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+e12346
+	e123468
+
+e1234684
+e12346843
+e123468435
+e1234684352
+e12346843528
+e123468435285
+e1234684352856
+e12346843528561
+e123468435285612
+e1234684352856123
+e12346843528561234
+temp=1234
+
+found 4 
+wrong pin, pls try again
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+2
+20
+200
+2000
+20000
+200000
+	2000000
+
+20000000
+,you dont have that much money, get a job! 
+2
+20000000b
+20000000bg
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+2
+20
+200
+2000
+20000
+200000
+	2000000
+
+20000000
+DEBUG: Korrektur 2000000
+	2000000
+DEBUG: Korrektur 200000
+200000
+DEBUG: Korrektur 20000
+20000
+DEBUG: Korrektur 2000
+2000
+DEBUG: Korrektur 200
+200
+DEBUG: Korrektur 20
+20
+DEBUG: Korrektur 2
+2
+DEBUG: Korrektur 
+
+5
+50
+(Take these 50 monies, have a nice day.
+3
+50b
+-you received your money, state is now idle 
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+2
+20
+200
+2000
+DEBUG: Korrektur 200
+200
+DEBUG: Korrektur 20
+20
+205
+2050
+DEBUG: Korrektur 205
+205
+DEBUG: Korrektur 20
+20
+201
+2010
+*Take these 2010 monies, have a nice day.
+3
+2010b
+-you received your money, state is now idle 
+
+ state is now 1. ready for code
+e
+e1
+e12
+%ERRROR: illegal iput, pin too short
+temp=
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+&Take these  monies, have a nice day.
+3
+b
+ state is now 1. ready for code
+e
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
+
+ state is now 1. ready for code
+e
+
  state is now 1. ready for code
 e
-e1
-e12
-e125
-DEBUG: Korrektur e12
-e12
-e123
-e1234
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+"you already have a card inserted
+e
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+%There is already a card in the slot
+
+1
+12
+123
+1234
 temp=1234
 
 found 4 
@@ -612,27 +1398,21 @@ found 4
 
  state is now 1. ready for code
 e
+e1
+e12
+e125
+DEBUG: Korrektur e12
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
 
  state is now 1. ready for code
 e
-e1
-e12
-e123
-e1235
-temp=1235
-
-found 4 
-wrong pin, pls try again
-
-1
-12
-123
-1234
-temp=1234
-
-found 4 
-)Pin entry successful, pls enter amount 
-2
 
  state is now 1. ready for code
 e
@@ -644,15 +1424,6 @@ found 4
 
 found 4 
 wrong pin, pls try again
-
-1
-12
-123
-1233
-temp=1233
-
-found 4 
-you are a criminal sir!
 
 1
 12
@@ -669,26 +1440,31 @@ found 4
 e1
 e12
 e123
-e1234
+e1235
+temp=1235
+
+found 4 
+wrong pin, pls try again
+
+1
+12
+123
+1233
+temp=1233
+
+found 4 
+you are a criminal sir!
+
+1
+12
+123
+1234
 temp=1234
 
 found 4 
 )Pin entry successful, pls enter amount 
 2
 
-2
-20
-200
-2000
-20000
-200000
-	2000000
-
-20000000
-,you dont have that much money, get a job! 
-2
-20000000b
-20000000bg
  state is now 1. ready for code
 e
 e1
@@ -705,23 +1481,15 @@ found 4
 20
 200
 2000
-DEBUG: Korrektur 200
-200
-DEBUG: Korrektur 20
-20
-205
-2050
-DEBUG: Korrektur 205
-205
-DEBUG: Korrektur 20
-20
-201
-2010
-*Take these 2010 monies, have a nice day.
-3
-2010b
--you received your money, state is now idle 
-
+20000
+200000
+	2000000
+
+20000000
+,you dont have that much money, get a job! 
+2
+20000000b
+20000000bg
  state is now 1. ready for code
 e
 e1
@@ -734,16 +1502,27 @@ found 4
 )Pin entry successful, pls enter amount 
 2
 
-5
-50
-500
-)Take these 500 monies, have a nice day.
+2
+20
+200
+2000
+DEBUG: Korrektur 200
+200
+DEBUG: Korrektur 20
+20
+205
+2050
+DEBUG: Korrektur 205
+205
+DEBUG: Korrektur 20
+20
+201
+2010
+*Take these 2010 monies, have a nice day.
 3
-500b
+2010b
 -you received your money, state is now idle 
 
-invalid card inserted
-
  state is now 1. ready for code
 e
 e1
@@ -766,16 +1545,6 @@ found 4
 
 invalid card inserted
 
-invalid card inserted
-
-invalid card inserted
-
-invalid card inserted
-
-invalid card inserted
-
-invalid card inserted
-
  state is now 1. ready for code
 e
 e1
@@ -788,3 +1557,35 @@ found 4
 )Pin entry successful, pls enter amount 
 2
 
+5
+50
+500
+)Take these 500 monies, have a nice day.
+3
+500b
+-you received your money, state is now idle 
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+invalid card inserted
+
+ state is now 1. ready for code
+e
+e1
+e12
+e123
+e1234
+temp=1234
+
+found 4 
+)Pin entry successful, pls enter amount 
+2
+
