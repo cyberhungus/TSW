@@ -6,6 +6,7 @@ public class bankautomat {
     private int dailyMaximum = 5000;
     private int state = 0;
     private int tryCount = 0;
+    private int lastAmount = 0;
     //0 idle- 1 waiting for pin - 2 waiting for amount  3-cash out
 
     bankautomat() {
@@ -88,6 +89,7 @@ public class bankautomat {
             case 'e':
                 if(state==0) {
                     state = 1;
+                    lastAmount = 0;
                     print("state is now 1. ready for code");
                 }
                 else {
@@ -154,6 +156,9 @@ public class bankautomat {
     public int getState() {
         return state;
     }
+    public int getLastAmount(){
+        return lastAmount;
+    }
 
     private void confirmEntry(
     ) {
@@ -174,7 +179,7 @@ public class bankautomat {
                 } catch (StringIndexOutOfBoundsException e) {
                     print("tried to remove letter from zero-length string");
                 }
-
+                lastAmount = Integer.parseInt(temp);
                 print("Take these " + temp + " monies, have a nice day.");
                 print(state+"");
 

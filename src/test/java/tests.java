@@ -211,6 +211,12 @@ public class tests {
         bankautomat.inputString("ea");
         Assertions.assertEquals(0, bankautomat.getState());
     }
+    @Test
+    void rightAmount(){
+        bankautomat bankautomat = new bankautomat();
+        bankautomat.inputString("e1234b500b");
+        Assertions.assertEquals(500, bankautomat.getLastAmount());
+    }
 
 
 }
