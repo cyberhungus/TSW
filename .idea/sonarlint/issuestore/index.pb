@@ -9,3 +9,6 @@ H
 src/test/java/tests.java,1\5\15e05c7cb24308c2c9217a15f321eb442f3c9e02
 N
 src/main/java/bankautomat.java,7\9\79827e2674cc0542f4fe7bdb9ac74b5517e64a46
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

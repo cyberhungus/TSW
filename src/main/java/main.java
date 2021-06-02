@@ -21,8 +21,8 @@ public class main {
 
 
             try{
-            char c = s.charAt(0);
-                bA.run(c);}
+                if (s!=null){
+                bA.inputString(s);}}
             catch (StringIndexOutOfBoundsException e){
                 System.out.println("error");
             }

@@ -73,7 +73,6 @@ public class bankautomat {
                 print("wrong pin, pls try again");
             } else if (tryCount == 2) {
                 print("you are a criminal sir!");
-                //state = 0;
             }
             else if (tryCount==3){
                 print("i am calling the police!");
@@ -179,7 +178,12 @@ public class bankautomat {
                 } catch (StringIndexOutOfBoundsException e) {
                     print("tried to remove letter from zero-length string");
                 }
-                lastAmount = Integer.parseInt(temp);
+                try {
+                    lastAmount = Integer.parseInt(temp);
+                } catch (NumberFormatException e){
+                    lastAmount = 0;
+                }
+
                 print("Take these " + temp + " monies, have a nice day.");
                 print(state+"");
 
